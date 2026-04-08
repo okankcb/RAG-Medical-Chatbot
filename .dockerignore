@@ -1,0 +1,14 @@
+.venv
+__pycache__
+*.pyc
+*.pyo
+.env
+*.env
+.git
+.gitignore
+notebooks
+data
+logs
+rag_medical_chatbot.egg-info
+uv.lock
+README.md

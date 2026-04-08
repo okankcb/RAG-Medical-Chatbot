@@ -3,3 +3,6 @@
 __pycache__/
 *.pyc
 .DS_Store
+rag_medical_chatbot.egg-info
+venv/
+logs/

@@ -1,12 +1,12 @@
 pipeline {
     agent any
 
-    /*environment {
-        AWS_REGION = 'us-east-1'
+    environment {
+        AWS_REGION = 'eu-west-3'
         ECR_REPO = 'my-repo'
         IMAGE_TAG = 'latest'
         SERVICE_NAME = 'llmops-medical-service'
-    }*/
+    }
 
     stages {
         stage('Clone GitHub Repo') {
@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        /*stage('Build, Scan, and Push Docker Image to ECR') {
+        stage('Build, Scan, and Push Docker Image to ECR') {
             steps {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-token']]) {
                     script {
@@ -40,7 +40,7 @@ pipeline {
             }
         }
 
-         stage('Deploy to AWS App Runner') {
+        /* stage('Deploy to AWS App Runner') {
             steps {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-token']]) {
                     script {

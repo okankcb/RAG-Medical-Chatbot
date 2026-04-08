@@ -1,0 +1,11 @@
+# LLM & LangChain
+langchain
+langchain_community
+langchain_huggingface
+langchain_text_splitters
+faiss-cpu
+pypdf
+huggingface_hub
+sentence-transformers
+flask
+python-dotenv
